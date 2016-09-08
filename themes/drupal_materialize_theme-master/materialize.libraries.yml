@@ -1,0 +1,22 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/materialize.min.css: { weight: -10 }
+      css/drupal-materialize.css: { weight: -10 }
+    modules:
+      css/drupal-toolbar.css: { weight: -10 }
+    fonts:
+      'https://fonts.googleapis.com/icon?family=Material+Icons': { type: external }
+
+global-scripts:
+  js:
+    js/materialize.js: {}
+    js/materialize-init.js: {}
+
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
