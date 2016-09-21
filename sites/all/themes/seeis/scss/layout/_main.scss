@@ -1,0 +1,25 @@
+//variables
+$color: #cc6600;
+$morado: #cc66cc;
+@media #{$small-up}{
+  .html{
+    background: $color;
+  }
+}
+@media #{$small-only}{
+
+}
+@media #{$medium-up}{
+  .html{
+    background: $morado;
+  }
+}
+@media #{$medium-only}{
+
+}
+@media #{$large-up}{
+
+}
+@media #{$large-only}{
+
+}
