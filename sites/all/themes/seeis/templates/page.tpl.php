@@ -114,9 +114,9 @@
   <?php endif; ?>
 
   <!--.l-main -->
-  <main role="main" class="row l-main">
+  <main role="main" class="l-main">
     <!-- .l-main region -->
-    <div class="<?php print $main_grid; ?> main columns">
+    <div class="<?php print $main_grid; ?> main ">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlight panel callout">
           <?php print render($page['highlighted']); ?>
@@ -206,15 +206,15 @@
   <?php endif; ?>
 
   <!--.l-footer -->
-  <footer class="l-footer panel row" role="contentinfo">
+  <footer class="l-footer" role="contentinfo">
     <?php if (!empty($page['footer'])): ?>
-      <div class="footer columns">
+      <div class="footer">
         <?php print render($page['footer']); ?>
       </div>
     <?php endif; ?>
 
     <?php if ($site_name) : ?>
-      <div class="copyright columns">
+      <div class="copyright">
         &copy; <?php print date('Y') . ' ' . $site_name . ' ' . t('All rights reserved.'); ?>
       </div>
     <?php endif; ?>

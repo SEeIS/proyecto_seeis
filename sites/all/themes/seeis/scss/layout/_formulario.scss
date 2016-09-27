@@ -1,18 +1,21 @@
-@media #{$small-up}{
+.block-entityform-block-informacion-alumno{
+	@media #{$small-up}{
+		@include grid-row();
+		background: $gray;
+	}
+	@media #{$small-only}{
 
-}
-@media #{$small-only}{
+	}
+	@media #{$medium-up}{
 
-}
-@media #{$medium-up}{
+	}
+	@media #{$medium-only}{
 
-}
-@media #{$medium-only}{
+	}
+	@media #{$large-up}{
 
-}
-@media #{$large-up}{
+	}
+	@media #{$large-only}{
 
-}
-@media #{$large-only}{
-
+	}
 }
