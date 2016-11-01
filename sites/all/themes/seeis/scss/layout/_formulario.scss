@@ -1,16 +1,149 @@
 .block-entityform-block-informacion-alumno{
 	@media #{$small-up}{
-		@include grid-row();
+		div{
+			label{
+			display: none;
+			}
+			div{
+				margin-top: 0.1rem;
+				margin-bottom: 0.1rem;
+				// select option[disabled] {
+				// 	color: #8C8C8C;
+				// 	font-weight: bold
+				//  }
+						select
+						{
+						    color: #8C8C8C;
+								option
+								{
+								    color: #000;
+								}
+								option:first-child[disabled]
+								{
+									input[type="text"]:disabled {
+    								background: #dddddd;
+										}
+								    color: #8C8C8C;
+
+								}
+						}
+				}
+			}
+		h2{
+			text-align: center;
+		}
 		background: $gray;
-	}
-	@media #{$small-only}{
+		#informacion-alumno-entityform-edit-form{
+			@include grid-row();
+		}
+		#edit-submit{
+			margin:auto;
+  		display:block;
+			margin-bottom: 1rem;
+		}
 
 	}
+	@media #{$small-only}{
+		form{
+			padding-left: rem-calc(16);
+			padding-right: rem-calc(16);
+		}
+	}
 	@media #{$medium-up}{
+		div{
+			#edit-field-nombre{
+				padding-right: 1rem;
+				width: 40%;
+				float: left;
+			}
+			#edit-field-apellido-paterno{
+				padding-right: 1rem;
+				width: 30%;
+				float: left;
+			}
+			#edit-field-apellido-materno{
+				width: 30%;
+				float: left;
+			}
+			#edit-field-num-boleta{
+				padding-right: 1rem;
+				width: 25%;
+				float: left;
+			}
+			#edit-field-carrera{
+				padding-right: 1rem;
+				width: 25%;
+				float: left;
+			}
+			#edit-field-semestre{
+				padding-right: 1rem;
+				width: 25%;
+				float: left;
+			}
+			#edit-field-asunto{
+				width: 25%;
+				float: left;
+			}
+		}
 
 	}
 	@media #{$medium-only}{
+		div{
+			div{
+				margin-top: 0.1rem;
+				margin-bottom: 0.1rem;
+			}
 
+			#edit-field-nombre{
+				padding-left: 1rem;
+				padding-right: 1rem;
+				width: 40%;
+				float: left;
+			}
+			#edit-field-apellido-paterno{
+				padding-right: 1rem;
+				width: 30%;
+				float: left;
+			}
+			#edit-field-apellido-materno{
+				padding-right: 1rem;
+				width: 30%;
+				float: left;
+			}
+			#edit-field-num-boleta{
+				padding-left: 1rem;
+				padding-right: 1rem;
+				width: 50%;
+				float: left;
+			}
+			#edit-field-carrera{
+				width: 50%;
+				float: left;
+					label{
+						display: none;
+					}
+			}
+			#edit-field-semestre{
+				padding-left: 1rem;
+				padding-right: 1rem;
+				width: 50%;
+				float: left;
+				label{
+					display: none;
+				}
+			}
+			#edit-field-asunto{
+				padding-right: 1rem;
+				width: 50%;
+				float: left;
+				label{
+					display: none;
+				}
+			}
+			#edit-field-mensaje{
+				padding: 1rem;
+			}
+		}
 	}
 	@media #{$large-up}{
 

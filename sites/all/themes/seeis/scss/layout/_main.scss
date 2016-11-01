@@ -1,24 +1,26 @@
 //variables
 $gray : #9BA2A9;
-$green : #00853E;
+$green : #00753E;
 $white : #FFFFFF;
 $vino : #742844;
 
-@media #{$small-up}{
+body{
+	@media #{$small-up}{
 
-}
-@media #{$small-only}{
+	}
+	@media #{$small-only}{
 
-}
-@media #{$medium-up}{
+	}
+	@media #{$medium-up}{
 
-}
-@media #{$medium-only}{
+	}
+	@media #{$medium-only}{
 
-}
-@media #{$large-up}{
+	}
+	@media #{$large-up}{
 
-}
-@media #{$large-only}{
+	}
+	@media #{$large-only}{
 
+	}
 }

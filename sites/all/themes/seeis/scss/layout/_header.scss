@@ -1,18 +1,61 @@
-@media #{$small-up}{
+header{
+	@media #{$small-up}{
+		border-bottom: solid black rem-calc(6);
+		h2{
+			font-size: rem-calc(16);
+		}
+		.top-bar{
+			border-top: solid #00853E rem-calc(4);
+			background: #00753E;
+			#main-menu{
+				float: right !important;
+				li{
+					background: transparent;
+					a{
+						background: transparent;
+					}
+				}
+			}
+		}
+		.top-bar.expanded .title-area{
+			background: #00753E;
+		}
+		.top-bar.expanded .toggle-topbar a{
+			color: #fff;
+		}
+		.top-bar.expanded .toggle-topbar a span::after{
+		    box-shadow: 0 0 0 1px #fff,0 7px 0 1px #fff,0 14px 0 1px #fff;
+		}
 
-}
-@media #{$small-only}{
+	}
+	@media #{$small-only}{
+		h1{
+			display: none;
+		}
+		.top-bar{
+			.top-bar-section{
+				#main-menu{
+					li{
+						a{
+							color: #00753E;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media #{$medium-up}{
+		h1{
+			font-size: rem-calc(48);
+		}
+	}
+	@media #{$medium-only}{
 
-}
-@media #{$medium-up}{
+	}
+	@media #{$large-up}{
 
-}
-@media #{$medium-only}{
+	}
+	@media #{$large-only}{
 
-}
-@media #{$large-up}{
-
-}
-@media #{$large-only}{
-
+	}
 }

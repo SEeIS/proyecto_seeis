@@ -1,18 +1,24 @@
-@media #{$small-up}{
+footer{
+	@media #{$small-up}{
+		background: #00753E;
+		border-top: solid black rem-calc(6);
+		.footer, .copyright{
+			@include grid-row();
+		}
+	}
+	@media #{$small-only}{
 
-}
-@media #{$small-only}{
+	}
+	@media #{$medium-up}{
 
-}
-@media #{$medium-up}{
+	}
+	@media #{$medium-only}{
 
-}
-@media #{$medium-only}{
+	}
+	@media #{$large-up}{
 
-}
-@media #{$large-up}{
+	}
+	@media #{$large-only}{
 
-}
-@media #{$large-only}{
-
+	}
 }
